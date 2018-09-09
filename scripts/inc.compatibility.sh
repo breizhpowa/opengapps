@@ -411,12 +411,9 @@ EOFILE
 api19hack(){
   # On KitKat there is only 1 kind of setupwizard without a product type
   if [ "$API" -le "19" ]; then
-  gappscore="$gappscore
-setupwizard"
+  gappscore="$gappscore"
   else
-  gappscore="$gappscore
-setupwizarddefault
-setupwizardtablet"
+  gappscore="$gappscore"
   fi
 }
 
